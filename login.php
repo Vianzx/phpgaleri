@@ -26,8 +26,9 @@
 				 $cek = mysqli_query($conn, "SELECT * FROM tb_admin WHERE username = '".$user."'AND password = '".$pass."'");
 				 if(mysqli_num_rows($cek) > 0){
 					 $d = mysqli_fetch_object($cek);
-					 var_dump($d);
-					 die;
+					
+					
+					 
 					 $_SESSION['status_login'] = true;
 					 $_SESSION['a_global'] = $d;
 					 $_SESSION['id'] = $d->admin_id;
