@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting(0);
 include 'db.php';
 $kontak = mysqli_query($conn, "SELECT admin_telp, admin_email, admin_address FROM tb_admin WHERE admin_id = 2");
 $a = mysqli_fetch_object($kontak);
